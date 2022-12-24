@@ -3,6 +3,7 @@ import css from "../styles/_shared.module.css";
 import type { AppProps } from "next/app";
 import { combineClasses } from "../utils/utlis";
 import localFont from "@next/font/local";
+import Navigation from "./components/Navigations";
 
 const sono = localFont({
     src: [
@@ -15,10 +16,11 @@ const sono = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <>
-            <main className={combineClasses([sono.variable, css.main])}>
+        <div className={css.mainWrapper}>
+            <Navigation />
+            <main className={sono.variable}>
                 <Component {...pageProps} />
             </main>
-        </>
+        </div>
     );
 }
