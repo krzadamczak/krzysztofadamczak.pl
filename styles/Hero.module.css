@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: var(--font-sono);
+}
+.hero__subtitle {
+    font-size: 32px;
+    font-weight: 300;
+}
+.hero__blob {
+    width: 40%;
+    position: relative;
+    z-index: 4;
+}
+.hero__call-to-action {
+    margin-top: 105px;
+}
