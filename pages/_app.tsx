@@ -16,9 +16,9 @@ const sono = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <div className={css.mainWrapper}>
+        <div className={combineClasses([css["main-wrapper"], sono.variable])}>
             <Navigation />
-            <main className={sono.variable}>
+            <main>
                 <Component {...pageProps} />
             </main>
         </div>
