@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    gap: 100px;
+    justify-content: flex-end;
+}
+.nav--small {
+    gap: 50px;
+}
+.nav__link {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+.nav__link--small {
+    font-size: 14px;
+}
