@@ -1,0 +1,52 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+}
+.about__title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.about__me {
+    font-family: "Montserrat";
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.about__tech-stack {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.about__first-inner {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tag {
+    padding: 5px 10px;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+.about__social {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-size: 24px;
+}
+.about__icon {
+    margin: 30px auto 0 auto;
+}
+.about__icon--github {
+    width: 100px;
+}
+.about__icon--codepen {
+    width: 200px;
+}
+.about__wrapper-second {
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+}
