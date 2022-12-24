@@ -39,7 +39,7 @@ const About = () => {
             <div className={css["about__wrapper-second"]}>
                 <div className={css.about__social}>
                     <p>
-                        Odwiedź mojego&nbsp;
+                        Odwiedź mojego &nbsp;
                         <a className='link' href='https://github.com/krzadamczak'>
                             GitHuba
                         </a>

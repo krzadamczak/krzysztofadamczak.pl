@@ -1,0 +1,13 @@
+.projects__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20%;
+}
+.projects__description {
+    margin-bottom: 45px;
+}
+.projects__title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
