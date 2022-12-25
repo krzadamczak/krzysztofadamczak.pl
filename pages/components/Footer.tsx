@@ -4,7 +4,7 @@ import css from "../../styles/Footer.module.css";
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className='footer'>
+        <footer className={css.footer}>
             Krzysztof Adamczak © 2013 - {currentYear}
             <Navigation type='small' />
         </footer>
