@@ -1,9 +1,10 @@
 import css from "../../styles/About.module.css";
 import Image from "next/image";
+import { ForwardedRef, forwardRef } from "react";
 
-const About = () => {
+const About = ({ ref }: { ref: ForwardedRef<HTMLElement> }) => {
     return (
-        <section className={css.about}>
+        <section ref={ref} className={css.about} id='about'>
             <div className={css["about__text-content"]}>
                 <h3 className={css.about__title}>O mnie</h3>
                 <p className={css.about__me}>
@@ -61,4 +62,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default forwardRef(About);

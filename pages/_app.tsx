@@ -6,6 +6,7 @@ import { combineClasses } from "../utils/utlis";
 import localFont from "@next/font/local";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { createRef } from "react";
 
 const sono = localFont({
     src: [
