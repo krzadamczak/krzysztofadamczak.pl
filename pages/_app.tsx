@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/_variables.css";
 import css from "../styles/_shared.module.css";
 import type { AppProps } from "next/app";
 import { combineClasses } from "../utils/utlis";
@@ -14,12 +15,17 @@ const sono = localFont({
     ],
     variable: "--font-sono",
 });
+const chivoMono = localFont({
+    src: "../utils/ChivoMono.woff2",
+    style: "normal",
+    variable: "--font-chivoMono",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <div className={combineClasses([css["main-wrapper"], sono.variable])}>
             <Navigation />
-            <main>
+            <main className={css["main-content"]}>
                 <Component {...pageProps} />
             </main>
             <Footer />

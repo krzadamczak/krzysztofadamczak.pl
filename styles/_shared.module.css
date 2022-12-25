@@ -2,5 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 65%;
-    margin: auto;
+    margin: 50px auto;
+    gap: var(--gap);
+}
+.main-wrapper__nav {
+    margin-bottom: var(--gap);
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
 }
