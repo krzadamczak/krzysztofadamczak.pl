@@ -8,6 +8,7 @@ const Button = ({ to, children }: { to?: string; children: React.ReactNode }) =>
         element?.scrollIntoView({ behavior: "smooth" });
     };
     return (
+        //TODO: BEM positioning and custom components - what's the best approach?
         <button className={css.button} type='button' onClick={handleScroll("projects")}>
             {children}
         </button>
