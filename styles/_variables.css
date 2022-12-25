@@ -1,3 +1,5 @@
 :root {
     --gap: 150px;
+    --small-shadow: 0 5px 10px rgb(10 0 143 / 40%);
+    --accent-purple: #5048ff;
 }
