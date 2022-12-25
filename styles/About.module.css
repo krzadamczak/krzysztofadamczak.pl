@@ -10,7 +10,7 @@
 }
 
 .about__me {
-    font-family: "Montserrat";
+    font-family: var(--font-montserrat);
     text-align: justify;
     margin-bottom: 30px;
 }

@@ -15,15 +15,16 @@ const sono = localFont({
     ],
     variable: "--font-sono",
 });
-const chivoMono = localFont({
-    src: "../utils/ChivoMono.woff2",
+const montserrat = localFont({
+    src: "../utils/Montserrat400.woff2",
     style: "normal",
-    variable: "--font-chivoMono",
+    weight: "400",
+    variable: "--font-montserrat",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <div className={combineClasses([css["main-wrapper"], sono.variable])}>
+        <div className={combineClasses([css["main-wrapper"], sono.variable, montserrat.variable])}>
             <Navigation />
             <main className={css["main-content"]}>
                 <Component {...pageProps} />

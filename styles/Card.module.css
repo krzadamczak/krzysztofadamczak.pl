@@ -14,8 +14,7 @@
     margin-bottom: 15px;
 }
 .card__description {
-    font-family: "Montserrat";
-    font-weight: 300;
+    font-family: var(--font-montserrat);
     margin-bottom: 30px;
     text-align: justify;
 }
