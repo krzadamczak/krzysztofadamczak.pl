@@ -1,7 +1,7 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 150px;
+    gap: var(--gap);
 }
 .about__title {
     font-size: 32px;
@@ -22,19 +22,15 @@
 }
 .about__first-inner {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
-}
-.tag {
-    padding: 5px 10px;
-    border: 1px solid #606060;
-    border-radius: 5px;
 }
 .about__social {
     display: flex;
     flex-direction: column;
     place-items: center;
     font-size: 24px;
+    gap: 25px;
 }
 .about__icon {
     margin: 30px auto 0 auto;
@@ -48,5 +44,5 @@
 .about__wrapper-second {
     display: flex;
     flex-direction: column;
-    gap: 105px;
+    justify-content: space-between;
 }

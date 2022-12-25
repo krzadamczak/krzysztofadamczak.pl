@@ -1,10 +1,26 @@
 import css from "../../styles/About.module.css";
 import Image from "next/image";
 import { ForwardedRef, forwardRef } from "react";
+import Tag from "./Tag";
+import { nanoid } from "nanoid";
 
-const About = ({ ref }: { ref: ForwardedRef<HTMLElement> }) => {
+const About = () => {
+    const tags = [
+        "React",
+        "Express.js",
+        "Day.js",
+        "Vite",
+        "CSS",
+        "HTML",
+        "Visual Studio Code",
+        "Figma",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "GitHub",
+        "GIT",
+    ];
     return (
-        <section ref={ref} className={css.about} id='about'>
+        <section className={css.about} id='about'>
             <div className={css["about__text-content"]}>
                 <h3 className={css.about__title}>O mnie</h3>
                 <p className={css.about__me}>
@@ -20,21 +36,9 @@ const About = ({ ref }: { ref: ForwardedRef<HTMLElement> }) => {
                 <div className={css.about__tech}>
                     <h4 className={css["about__tech-stack"]}>Technologie z których aktualnie korzystam.</h4>
                     <div className={css["about__first-inner"]}>
-                        <div className={css.tag}>Java Script (ES6+)</div>
-                        <div className={css.tag}>React</div>
-                        <div className={css.tag}>Express.js</div>
-                        <div className={css.tag}>Day.js</div>
-                        <div className={css.tag}>Vite</div>
-                        <div className={css.tag}>CSS</div>
-                        <div className={css.tag}>HTML</div>
-
-                        <div className={css.tag}>Visual Studio Code</div>
-                        <div className={css.tag}>Figma</div>
-                        <div className={css.tag}>Adobe Illustrator</div>
-                        <div className={css.tag}>Adobe Photoshop</div>
-
-                        <div className={css.tag}>GitHub</div>
-                        <div className={css.tag}>GIT</div>
+                        {tags.map((tag) => (
+                            <Tag key={nanoid()}>{tag}</Tag>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -62,4 +66,4 @@ const About = ({ ref }: { ref: ForwardedRef<HTMLElement> }) => {
     );
 };
 
-export default forwardRef(About);
+export default About;

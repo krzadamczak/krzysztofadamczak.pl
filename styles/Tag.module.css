@@ -1,0 +1,6 @@
+.tag {
+    padding: 10px 15px;
+    border: 1px solid #5048ff0a;
+    border-radius: 5px;
+    box-shadow: var(--very-small-shadow);
+}
