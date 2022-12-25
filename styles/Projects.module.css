@@ -5,6 +5,7 @@
 }
 .projects__description {
     margin-bottom: 45px;
+    font-family: var(--font-montserrat);
 }
 .projects__title {
     font-size: 32px;
