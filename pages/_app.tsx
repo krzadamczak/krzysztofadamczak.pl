@@ -3,7 +3,8 @@ import css from "../styles/_shared.module.css";
 import type { AppProps } from "next/app";
 import { combineClasses } from "../utils/utlis";
 import localFont from "@next/font/local";
-import Navigation from "./components/Navigations";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 const sono = localFont({
     src: [
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <main>
                 <Component {...pageProps} />
             </main>
+            <Footer />
         </div>
     );
 }

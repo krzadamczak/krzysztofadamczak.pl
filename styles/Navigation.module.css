@@ -12,3 +12,6 @@
     text-decoration: none;
     display: block;
 }
+.nav__link--small {
+    font-size: 14px;
+}
