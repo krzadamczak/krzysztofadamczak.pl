@@ -27,7 +27,6 @@
 .card__description {
     font-family: var(--font-montserrat);
     margin-bottom: 30px;
-    line-height: 2;
     text-align: justify;
 }
 .card__tags {
