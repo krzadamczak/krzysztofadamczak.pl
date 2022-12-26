@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import fs from "fs/promises";
 import path from "path";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
+import Contact from "./components/Contact";
 
 type Project = {
     title: string;
@@ -33,6 +34,7 @@ export default function Home({ projects }: { projects: Project[] }) {
             <Hero />
             <About />
             <Projects projects={projects} />
+            <Contact />
         </>
     );
 }

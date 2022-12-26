@@ -8,7 +8,7 @@ const Hero = () => {
             <div className={css.hero__wrapper}>
                 <h1 className={css.hero__title}>Krzysztof Adamczak</h1>
                 <h2 className={css.hero__subtitle}>Front End Developer</h2>
-                <Button positioning={sharedCss["hero__button"]} to='projects'>
+                <Button positioning={sharedCss["hero__button"]} scrollTo='projects'>
                     Zobacz moje portfolio
                 </Button>
             </div>
