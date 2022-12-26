@@ -3,7 +3,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     },
@@ -11,7 +11,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     },
@@ -19,7 +19,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     },
@@ -27,7 +27,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     },
@@ -35,7 +35,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     },
@@ -43,7 +43,7 @@
         "title": "czekamna.pl",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit reprehenderit asperiores eaque delectus hic.",
         "tags": ["Java Script", "Express.js"],
-        "thumbnail": "./p1_1.png",
+        "thumbnail": "/p1_1.png",
         "liveUrl": "https://google.com",
         "githubUrl": "https://google.com"
     }

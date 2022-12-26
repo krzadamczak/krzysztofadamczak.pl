@@ -6,7 +6,9 @@ const Card = (props: any) => {
     return (
         <article className={css.card}>
             {/* <img src={props.thumbnail} alt='test' className={css.card__thumbnail} /> */}
-            <div className={css.card__thumbnail}></div>
+            <div className={css.card__thumbnail}>
+                <Image src={props.thumbnail} alt='test' fill={true} style={{ objectFit: "cover" }} quality={100} />
+            </div>
             <div className={css.card__wrapper}>
                 <div className={css.card__title}>{props.title}</div>
                 <div className={css.card__description}>{props.description}</div>
