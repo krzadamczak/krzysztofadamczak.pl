@@ -1,7 +1,9 @@
 .projects__gallery {
+    /* display: flex;
+    flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 150px;
 }
 .projects__description {
     margin-bottom: 45px;

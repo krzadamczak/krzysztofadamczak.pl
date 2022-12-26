@@ -1,21 +1,30 @@
 .card {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--small-shadow);
 }
 .card__thumbnail {
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 300px;
+    background-image: url("/12.jpg");
+    background-position: center center;
+    background-size: cover;
     background-color: #79b1ff;
-    margin-bottom: 30px;
+}
+.card__wrapper {
+    padding: 30px;
 }
 .card__title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 .card__description {
     font-family: var(--font-montserrat);
     margin-bottom: 30px;
+    line-height: 2;
     text-align: justify;
 }
 .card__tags {
@@ -26,10 +35,6 @@
 .card__tag {
     font-weight: 500;
     font-size: 14px;
-    padding: 5px 10px;
-    border: 1px solid #5048ff0a;
-    border-radius: 5px;
-    box-shadow: var(--very-small-shadow);
 }
 .card__links {
     display: flex;

@@ -8,7 +8,7 @@
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
-    box-shadow: var(--small-shadow);
+    box-shadow: var(--big-shadow);
 }
 .button:hover {
     background-color: #3d33ff;

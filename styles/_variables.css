@@ -1,6 +1,7 @@
 :root {
     --gap: 150px;
-    --small-shadow: 0 5px 10px rgb(10 0 143 / 40%);
-    --very-small-shadow: 0 2px 5px #5048ff1f;
+    --big-shadow: 0 5px 10px rgb(10 0 143 / 40%);
+    --regular-shadow: 0 5px 10px rgb(10 0 143 / 10%);
+    --small-shadow: 0 2px 5px #5048ff1f;
     --accent-purple: #5048ff;
 }

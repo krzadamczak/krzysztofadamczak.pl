@@ -1,7 +1,17 @@
+import { nanoid } from "nanoid";
 import css from "../../styles/Projects.module.css";
 import Card from "./Card";
 
-const Projects = () => {
+type Project = {
+    title: string;
+    description: string;
+    liveUrl: string;
+    githubUrl: string;
+    thumbnail: string;
+    tags: Array<string>;
+};
+
+const Projects = ({ projects }: { projects: Project[] }) => {
     return (
         <section className={css.projects} id='projects'>
             <h3 className={css.projects__title}>Projekty</h3>
@@ -9,8 +19,9 @@ const Projects = () => {
                 Poniżej znajduje się kilka projektów nad którymi ostatnio pracowałem.
             </p>
             <div className={css.projects__gallery}>
-                <Card />
-                <Card />
+                {projects.map((project) => (
+                    <Card key={nanoid()} {...project} />
+                ))}
             </div>
         </section>
     );

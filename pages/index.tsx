@@ -1,10 +1,28 @@
 import Head from "next/head";
-import { RefObject } from "react";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import fs from "fs/promises";
+import path from "path";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
 
-export default function Home() {
+type Project = {
+    title: string;
+    description: string;
+    liveUrl: string;
+    githubUrl: string;
+    tags: Array<string>;
+    thumbnail: string;
+};
+
+export const getStaticProps: GetStaticProps<{ projects: Project[] }> = async () => {
+    const pathToFile = path.join(process.cwd(), "json", "data.json");
+    console.log(pathToFile);
+    const data = await fs.readFile(pathToFile, "utf-8");
+    const result = JSON.parse(data);
+    return { props: { projects: result } };
+};
+export default function Home({ projects }: { projects: Project[] }) {
     return (
         <>
             <Head>
@@ -14,7 +32,7 @@ export default function Home() {
             </Head>
             <Hero />
             <About />
-            <Projects />
+            <Projects projects={projects} />
         </>
     );
 }
