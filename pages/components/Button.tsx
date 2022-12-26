@@ -3,11 +3,11 @@ import css from "../../styles/Button.module.css";
 import { combineClasses } from "../../utils/utlis";
 
 const Button = ({
-    to = "",
+    scrollTo = "",
     positioning = "",
     children,
 }: {
-    to?: string;
+    scrollTo?: string;
     positioning?: string;
     children: React.ReactNode;
 }) => {
@@ -18,7 +18,7 @@ const Button = ({
     };
     return (
         //TODO: BEM positioning and custom components - what's the best approach?
-        <button className={combineClasses([css.button, positioning])} type='button' onClick={handleScroll(to)}>
+        <button className={combineClasses([css.button, positioning])} type='button' onClick={handleScroll(scrollTo)}>
             {children}
         </button>
     );
