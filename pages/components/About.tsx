@@ -6,7 +6,10 @@ import { nanoid } from "nanoid";
 
 const About = () => {
     const tags = [
+        "Java Script (ES6+)",
+        "Type Script",
         "React",
+        "Next.js",
         "Express.js",
         "Day.js",
         "Vite",
