@@ -8,15 +8,14 @@ const About = () => {
     const tags = [
         "Java Script (ES6+)",
         "Type Script",
+        "HTML",
+        "CSS",
         "React",
         "Next.js",
         "Express.js",
         "Day.js",
-        "Vite",
-        "CSS",
-        "HTML",
-        "Visual Studio Code",
         "Figma",
+        "Visual Studio Code",
         "Adobe Illustrator",
         "Adobe Photoshop",
         "GitHub",
@@ -27,42 +26,39 @@ const About = () => {
             <div className={css["about__text-content"]}>
                 <h3 className={css.about__title}>O mnie</h3>
                 <p className={css.about__me}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta laboriosam debitis quia
-                    possimus delectus, minus expedita voluptatibus consequuntur quasi! Possimus a quidem reiciendis
-                    neque nostrum soluta ea magni, eligendi repudiandae illum? Corporis dolore, dolor fugit
-                    reprehenderit asperiores eaque delectus hic. Quia, itaque. Repudiandae cumque ipsa voluptate id vero
-                    delectus asperiores quidem nemo reiciendis ducimus qui adipisci ipsum, sunt, quia error deleniti
-                    eaque animi reprehenderit non? Adipisci veritatis magni maxime ex culpa corrupti? Suscipit quae
-                    quis, obcaecati quo inventore assumenda, reprehenderit cum placeat autem fugit maxime, tempora
-                    consequuntur eaque. Nisi laboriosam itaque architecto autem hic quisquam nostrum ea id tempore.
+                    Cześć! Mam na imię Krzysztof. Programowanie to moja pasja odkąd tylko pamiętam. Już za szkolnych lat
+                    ciągnęło mnie do różnych języków programowania, tworzyłem pierwsze strony, małe programy, krótko
+                    mówiąc - wcielałem w życie wszystkie małe zajawki. Ta pasja trwa nieprzerwanie do dziś. Zawsze
+                    będzie nowy framework, nowa biblioteka czy nowy język którego będę chciał się nauczyć. Wciąż
+                    towarzyszy mi niezmienne zaangażowanie do pracy oraz nieprzerwana chęć doskonalenia się i zdobywania
+                    nowych umiejętności. Realizuje na ten moment kilka ciekawych projektów z którymi możesz zapoznać się
+                    poniżej. :-)
                 </p>
                 <div className={css.about__tech}>
-                    <h4 className={css["about__tech-stack"]}>Technologie z których aktualnie korzystam.</h4>
+                    <h4 className={css["about__subtitle"]}>Technologie z których aktualnie korzystam</h4>
                     <div className={css["about__first-inner"]}>
                         {tags.map((tag) => (
                             <Tag key={nanoid()}>{tag}</Tag>
                         ))}
                     </div>
                 </div>
+                <div className={css.about__links}>
+                    <h5 className={css["about__subtitle"]}>Gdzie mnie znajdziesz</h5>
+                    <a className={css.about__link} href='https://github.com/krzadamczak'>
+                        <Image src='/github.svg' alt='GitHub logo' width={25} height={25} />
+                        GitHub
+                    </a>
+                </div>
             </div>
             <div className={css["about__wrapper-second"]}>
                 <div className={css.about__social}>
-                    <p>
+                    <p className={css["about__social-text"]}>
                         Odwiedź mojego{" "}
                         <a className='link' href='https://github.com/krzadamczak'>
                             GitHuba
                         </a>
                     </p>
-                    <Image src='/github.svg' alt='GitHub logo' width={100} height={100} />
-                </div>
-                <div className={css.about__social}>
-                    <p>
-                        Zajrzyj na{" "}
-                        <a className='link' href='https://github.com/krzadamczak'>
-                            CodePen
-                        </a>
-                    </p>
-                    <Image src='/codepen.svg' alt='Codepen logo' width={100} height={100} />
+                    <Image src='/github.svg' alt='GitHub logo' width={50} height={50} />
                 </div>
             </div>
         </section>

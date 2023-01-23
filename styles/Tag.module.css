@@ -7,3 +7,14 @@
 .tag--small {
     padding: 5px 10px;
 }
+
+@media screen and (max-width: 425px) {
+    .tag {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+/* @media screen and (max-width: 375px) {
+    .tag {
+    }
+} */

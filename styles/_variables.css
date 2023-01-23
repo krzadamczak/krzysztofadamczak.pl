@@ -5,3 +5,9 @@
     --small-shadow: 0 2px 5px #5048ff1f;
     --accent-purple: #5048ff;
 }
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --gap: 100px;
+    }
+}

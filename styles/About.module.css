@@ -1,25 +1,37 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+    display: flex;
+}
+.about__text-content {
+    width: clamp(85ch, calc(45vw - 100px), 100ch);
 }
 .about__title {
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-
-.about__me {
-    font-family: var(--font-montserrat);
-    text-align: justify;
-    margin-bottom: 30px;
-}
-
-.about__tech-stack {
+.about__subtitle {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
+.about__me {
+    font-family: var(--font-montserrat);
+    text-align: justify;
+    margin-bottom: 45px;
+}
+.about__links {
+    display: none;
+}
+.about__link {
+    width: fit-content;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.about__tech {
+    margin-bottom: 45px;
+}
+
 .about__first-inner {
     display: flex;
     gap: 15px;
@@ -29,8 +41,8 @@
     display: flex;
     flex-direction: column;
     place-items: center;
-    font-size: 24px;
     gap: 25px;
+    text-align: center;
 }
 .about__icon {
     margin: 30px auto 0 auto;
@@ -44,5 +56,49 @@
 .about__wrapper-second {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 100px;
+    background-color: #eff7ff3d;
+    border-radius: 5px;
+    box-shadow: var(--small-shadow);
+    padding: 4rem;
+    height: fit-content;
+    margin: auto;
+}
+.about__social-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1920px) {
+    .about__wrapper-second {
+        margin: auto 0 auto auto;
+    }
+}
+
+@media screen and (max-width: 1343px) {
+    .about__text-content {
+        width: 100ch;
+    }
+    .about__wrapper-second {
+        display: none;
+    }
+    .about__links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about__wrapper-second {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about__social-text {
+        font-size: 20px;
+    }
 }

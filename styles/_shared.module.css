@@ -1,7 +1,7 @@
 .main-wrapper {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: clamp(65vw, 1200px, 90vw);
     margin: 50px auto;
     gap: var(--gap);
 }
@@ -11,8 +11,14 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: var(--gap);
 }
 .hero__button {
     margin-top: 75px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero__button {
+        margin-top: 50px;
+    }
 }

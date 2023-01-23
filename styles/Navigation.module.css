@@ -19,3 +19,21 @@
 .nav__link--small {
     font-size: 14px;
 }
+
+@media screen and (max-width: 1024px) {
+    .nav__wrapper {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* TODO: Doesn't work - why? Is it because of dynamic class names? */
+@media screen and (max-width: 768px) {
+    footer .nav {
+        display: none;
+    }
+}
